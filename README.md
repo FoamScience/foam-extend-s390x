@@ -24,5 +24,14 @@ to apply the patch to the installation before attemting it. Then, you can build 
 ## Download the RPM
 
 ```
+sudo yum install wget
 wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1cCw-bpaDBIpY7VUCyUxquUvFQJwdJFC_' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1cCw-bpaDBIpY7VUCyUxquUvFQJwdJFC_" -O foam-extend-4.0-1.1.s390x.rpm && rm -rf /tmp/cookies.txt
+```
+
+## Install in user directory
+```
+sudo yum install rpm rpm-build git-core binutils-devel cmake flex rpm mercurial graphviz python
+sudo rpm --initdb --root /home/$USER
+sudo rpm --root /home/$USER -Uvh --nodeps foam-extend-4.0-1.1.s390x.rpm
+sudo chown -R $USER:$USER /home/$USER/foam
 ```

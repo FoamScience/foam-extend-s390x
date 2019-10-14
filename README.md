@@ -20,3 +20,9 @@ and:
 git am -3 changes.patch
 ```
 to apply the patch to the installation before attemting it. Then, you can build with `Allwmake.firstInstall` as usual.
+
+## Download the RPM
+
+```
+https://drive.google.com/open?id=1cCw-bpaDBIpY7VUCyUxquUvFQJwdJFC_
+```

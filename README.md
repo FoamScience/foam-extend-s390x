@@ -30,7 +30,7 @@ wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download
 
 ## Install in user directory
 ```
-sudo yum install rpm rpm-build git-core binutils-devel cmake flex rpm mercurial graphviz python
+sudo yum install -y rpm rpm-build git-core binutils-devel cmake flex rpm mercurial graphviz python
 sudo rpm --initdb --root /home/$USER
 sudo rpm --root /home/$USER -Uvh --nodeps foam-extend-4.0-1.1.s390x.rpm
 sudo chown -R $USER:$USER /home/$USER/foam

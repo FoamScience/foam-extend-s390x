@@ -34,4 +34,5 @@ sudo yum install -y rpm rpm-build git-core binutils-devel cmake flex rpm mercuri
 sudo rpm --initdb --root /home/$USER
 sudo rpm --root /home/$USER -Uvh --nodeps foam-extend-4.0-1.1.s390x.rpm
 sudo chown -R $USER:$USER /home/$USER/foam
+source ~/foam/foam-extend-4.0/etc/bashrc
 ```
